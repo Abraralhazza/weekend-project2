@@ -1,250 +1,161 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allrecipes Clone</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <header class="navbar">
-        <label for="menu-toggle" class="menu-icon">☰</label> 
-        <div class="logo">allrecipes</div>
-        <div class="search-container">
-            <input type="text" placeholder="Find a recipe or ingredient">
-            <button class="search-btn">🔍</button>
-        </div>
-        <button class="login-btn">🔴 Log In</button>
+    <title>Pinch of Yum Clone</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <header class="header">
+        <h1 class="logo">pinch <span class="accent">of yum</span></h1>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Recipes</a>
+            <a href="#">Start Here</a>
+        </nav>
     </header>
-
-    <input type="checkbox" id="menu-toggle">
-    <nav class="sidebar">
-        <label for="menu-toggle" class="close-btn">✖</label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About us</a></li>
-            <li><a href="News.html">News</a></li>
-            <li><a href="Trending.html">Trending</a></li>
-        </ul>
-    </nav>
-
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Trending</a></li>
-        </ul>
-    </nav>
-
     <section class="hero">
-        <div class="hero-container">
-            <h1>
-                <div class="blue-rectangle">
-                    America's #1 <span style="color:#fbd657;">#1 Trusted Recipe Resource</span>
-                </div>
-            </h1>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <span class="stat-number"><span class="green">●</span>113K</span>
-                    <span class="stat-text">Original Recipes</span>
-                </div>
-                <div class="hero-stat">
-                    <span class="stat-number"><span class="orange">●</span> 6.9M+</span>
-                    <span class="stat-text">Ratings & Reviews</span>
-                </div>
-                <div class="hero-stat">
-                    <span class="stat-number"><span class="yellow">●</span> 60M 60M</span>
-                    <span class="stat-text">Home Cooks</span>
-                </div>
-            </div>
+        <h2>Simple recipes made for <span class="highlight">real, actual, everyday life.</span></h2>
+    </section>
+
+    <section class="recipes">
+        <div class="recipe-card">
+            <img src="https://pinchofyum.com/wp-content/uploads/Chicken-Tikka-Masala.jpg"/>
+            <button>Winter</button>
+        </div>
+        <div class="recipe-card">
+            <img src="https://i.pinimg.com/736x/ae/21/7a/ae217a23f7262a4ec1c271ee3863f53d.jpg"/>
+            <button>Soups</button>
+        </div>
+        <div class="recipe-card">
+            <img src="https://pinchofyum.com/wp-content/uploads/Crispy-Black-Bean-Tacos-2.jpg"/>
+            <button>Vegetarian</button>
+        </div>
+        <div class="recipe-card">
+            <img src="https://pinchofyum.com/wp-content/uploads/Bang-Bang-Salmon-with-Rice-and-Cucumber-1494x2048.jpg"/>
+            <button>Dinner</button>
         </div>
     </section>
 
-    <main>
-        <section class="image-container">
-            <img src="https://www.allrecipes.com/thmb/5ORDx6izWg-rncnnd9jpdxUd_0g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/7509380-air-fryer-chicken-tenders-MID-M7004348-071-4x3-044762e6ecb84af890599cfebe6a913b.jpg"
-            width="460" height="345" />
-            
-        </section>
-        <section class="food-section">
-            <div class="food-intro">
-        <h3 class="h3"> MAIN DISHES </h3>
-        <h1>7 Air Fryer Dinners for Every Night of the Week</h1>
-        <p class ="placeholder">Your beloved countertop appliance is going to be as busy as you are: use it for crispy chicken, shrimp, and so much more.</p>
-    </div>
-
-
-        <section class="food-news">
-            <h2>Food News</h2>
-            <div class="news-grid">
-                <div class="news-item">
-                    <img src="https://i.pinimg.com/736x/86/b4/3f/86b43f03ce588e5864a7d4b3d2289ef7.jpg"/>
-                    
-                    <p>My Dad Has Won 3 Chili Cook-Offs—Here Are His Secrets</p>
-                </div>
-                <div class="news-item">
-                    <img src="https://i.pinimg.com/736x/8d/7a/db/8d7adbf1f236663b55b62510a3a70e03.jpg"/>
-                    <p>Our Fall Issue of Allrecipes Magazine Is Here</p>
-                </div>
-                <div class="news-item">
-                    <img src="https://i.pinimg.com/736x/bd/fb/aa/bdfbaa90fb2d637bccb7781461ed364a.jpg"/>
-                    <p>Dunkin’s Fall Menu Is the Best We’ve Seen in Years</p>
-                </div>
-            </div>
-        </section>
-        
-
-        <section class="trending-section">
-            <h2 class="trending-title">Trending Now </h2>
-            <div class="trending-grid">
-                <div class="trending-item">
-                    <img src="https://i.pinimg.com/736x/ae/27/2d/ae272de04516a9183479039d00488e58.jpg"/>
-                    <div class="trending-info">
-                        <span class="category">TRENDS</span>
-                        <h3 class="trending-heading">The 18 Recipes We Can’t Wait To Make This September</h3>
-                    </div>
-                </div>
-                <div class="trending-item">
-                    <img src="https://www.allrecipes.com/thmb/YmLdQY-Ou3mzDGHzkZcpNwx67kI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/Football-Cheese-Ball-3x2-1-8945bc1f1fd54319903732fbe6cc41ac.png"/> 
-                    <div class="trending-info">
-                        <span class="category">TAILGATING</span>
-                        <h3 class="trending-heading">The Most Popular Tailgating Foods Across 34 States</h3>
-                    </div>
-                </div>
-                <div class="trending-item">
-                    <img src="https://www.allrecipes.com/thmb/GTeRnyxSQ0syEzTVz2gEzvuOEg8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/458727_Plum-Blueberry-Upside-Down-Cake-4x3-peach-version-8c69820403ba4d578b00a9ec46e5013f.jpg"/> 
-                    <div class="trending-info">
-                        <span class="category">FRUIT DESSERTS</span>
-                        <h3 class="trending-heading">Delicious Fruit Desserts for Every Occasion</h3>
-                    </div>
-                </div>
-                <div class="trending-item">
-                    <img src="https://www.allrecipes.com/thmb/h2SmjFJcSXQnri51IhsGNOewx0A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/5770471_Arizona-Hatch-Chili-4x3-RecipeID-266314-Green-Chili-da729e6a04cb4f949ee1741f66eff045.jpg"/>
-                    <div class="trending-info">
-                        <span class="category">HATCH CHILES</span>
-                        <h3 class="trending-heading">Spicy and Tasty Hatch Chile Recipes</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <div class="orange-board">
-            <section class="community-section">
-                <div class="community-content">
-                    <h2>HOME OF THE HOME COOK</h2>
-                    <p>We know our community (that's you!) is the key ingredient that sets us apart. <br>
-                     <a href="#">LEARN MORE →</a></p>
-
-                    <div class="community-image">
-                        <img src="https://cam-image-store.accountservices.meredithcorp.io/ddm_images/a69a666c5b2220e9fee704c4d68168b57821f4d1bb4c26be8415ac57a073a1c4"/>
-                    </div>
-                    <p>FOOTBALLGRL16, OKLAHOMA, JOINED 2009</p>
-                </div>
-                
-                <div class="community-content">
-                    <h2>OUR PEOPLE</h2>
-                    <p>Testing, tasting, editing, and tasting again—our food pros are dedicated to showcasing the best of what you, our home cook heroes, are doing in your kitchens.</p>
-    
-                    <div class="people-grid">
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/2_67-4uZ8r5iCzDhDlfmOYtey48=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/molly-fergus-about-us-29c055640c1845d78cebf8363a223a63.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/lfXMMVBxCk13lsGJ582Gt2mcHhc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/carrie-boyd-about-us-097c1f504ea241cca70a3510e96aa1bb.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/8S1kCyZcqQ59Y6Cm7rXCjUus9I8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/ashley-kappel-about-us-3b2dd9fefb72425d9178835b9e37bf82.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/VCvosjBYsU7spuDAkBf7HHDXYMk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/ariel-knutson-c1df3f1ba5b84b9fa76fe0a3a914da1e.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/wLtiPdy2Q81L7YJvQSejfaLMxa4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR_Diana_about_us-d56b4ffb9dbe4411b67d2751e5dc43b9.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/QEhsWoqDTEBoomeI_eP8hOlhF0E=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/victoria-heydt-about-us-a1814f10975d4146b3e6a89bc7d3b9d4.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/9LccQxaMjSscfp9PNUsZcURoqwY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/devon-obrien-about-us-4b6a185098db4e79b97d0ebdf1d8d768.jpg"/>
-                        </div>
-                        <div class="person">
-                            <img src="https://www.allrecipes.com/thmb/U2qn6YB8gllI7AwUghGpXkv9Cfk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/eric-handelsman-about-us-ba6f854631944546b6245d88f910b648.jpg"/>
-                        </div>
-                    </div>
-    
-                    <div class="links">
-                        <a href="#">EDITORIAL LEADERSHIP →</a>
-                        <a href="#">CONTRIBUTORS →</a>
-                        <a href="#">TEST KITCHEN →</a>
-                    </div>
-    
-                    <div class="social-icons">
-                        <p>f 3.9M</p>
-                        <p>2.2M</p>
-                        <p>P 1.3M</p>
-                        <p>678.4K</p>
-                        <p>1.8M</p>
-                    </div>
-                </div>
-            </section>
+    <section class="categories">
+        <div>
+          <img src="https://pinchofyum.com/wp-content/uploads/Hawaiian-Chicken-Tacos-5.jpg"/>
+          <p>Quick and Easy</p>
         </div>
-    </main>
-
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <h3>allrecipes</h3>
-    
-             
-
-            <div class="footer-button-container">
-                <button class="footer-btn">Subscribe Now</button>
-            </div>    
-            <!-- Link under the button -->
-             <p><a href="#" class="footer-add-us">Follow us</a></p>
-    
-            <p class="footer-company-name">Company Name © 2025</p>
+        <div>
+          <img src="https://pinchofyum.com/wp-content/uploads/Bang-Bang-Salmon-with-Rice-and-Cucumber-1494x2048.jpg"/>
+          <p>Dinner</p>
         </div>
-    
-        <div class="footer-center">
-    
-            <!-- List in the middle -->
-              
-            <ul class="footer-list">
-                <li><a href="#"> DINNERS</a></li>
-                <li><a href="#">MEALS</a></li>
-                <li><a href="#">INGREDIENTS/a></li>
-                <li><a href="#">OCCASIONS</a></li>
-                <li><a href="#">CUISINES</a></li>
-                <li><a href="#">KITCHEN TIPS</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">FEATURES</a></li>
-
-
-            </ul>
-            
+        <div>
+          <img src="https://pinchofyum.com/wp-content/uploads/Crispy-Black-Bean-Tacos-2.jpg"/>
+          <p>Vegetarian</p>
         </div>
-    
-        <div class="footer-right">
-    
-            <p class="footer-company-about">
-                <span>About the company</span>
+        <div>
+          <img src="https://pinchofyum.com/wp-content/uploads/Napa-Chicken-Salad-1-3-1365x2048.jpg"/>
+          <p>Healthy</p>
+        </div>
+        <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Chicken-Tinga-Tacos-6.jpg"/>
+            <p>Instant Pot</p>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/27/ec/4c/27ec4c2dceac25f4caf88c0f2984fe93.jpg"/>
+            <p>Vegan</p>
+          </div>
+          <div>
+            <img src="https://pinchofyum.com/wp-content/uploads/Family-Style-Pitas-1.jpg"/>
+            <p>Meal Prep</p>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/ae/21/7a/ae217a23f7262a4ec1c271ee3863f53d.jpg"/>
+            <p>Soups</p>
+          </div>
+          <div>
+            <img src="https://i.pinimg.com/736x/ae/21/7a/ae217a23f7262a4ec1c271ee3863f53d.jpg"/>
+            <p>Salad</p>
+          </div>
+       </section>
+       <div class="search-container">
+        <div class="icon">🔍</div>
+        <input type="text" placeholder="Search our recipes" />
+        <span>or</span>
+        <div class="view-all">+ View All Recipes</div>
+      </div>
+      <div class="profile-section">
+        <div class="profile-info">
+            <h1>Hi! I'm Lindsay.</h1>
+            <h2>nice to meet you!</h2>
+            <p>
+                I'm a former 4th grade teacher, now full-time blogger. My husband Bjork and I live in Minnesota. Favorite things include my camera, lake days, and dark chocolate.
             </p>
-    
-            <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
-    
+            <button>Learn More</button>
         </div>
-    </footer>
-</body>
-</html> 
-  
+        <div class="profile-images">
+            <img src="https://pinchofyum.com/wp-content/assets/images/home-lindsay-kitchen.jpg"/>
+            <img src="https://pinchofyum.com/wp-content/assets/images/home-lindsay-pour.jpg"/>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <div class="icons">
+                
+            </div>
+        </div>
+        <div class="signup">
+            <h2>Signup for Email Updates</h2>
+            <div class="form">
+                <input type="text" placeholder="First Name">
+                <input type="email" placeholder="Email">
+                <button>Go</button>
+            </div>
+        </div>
+    </div>
+    <div class="tabs">
+      <button class="tab active">Vegetarian</button>
+      <button class="tab">Quick + Easy</button>
+      <button class="tab">Popular on Pinterest</button>
+  </div>
+
+  <div class="recipes2-section">
+      <div class="recipe2-card">
+          <img src="https://pinchofyum.com/wp-content/uploads/Brussels-with-Gochujang-1.jpg" alt="Recipe 1">
+          <button class="tag">Recipes</button>
+          <h3>Brussels Sprouts with Gochujang Butter</h3>
+      </div>
+      <div class="recipe2-card">
+          <img src="https://pinchofyum.com/wp-content/uploads/Scallion-Pancake-with-Egg.jpg" alt="Recipe 2">
+          <button class="tag">Recipes</button>
+          <h3>Scallion Pancake with Eggs</h3>
+      </div>
+      <div class="recipe2-card">
+          <img src="https://pinchofyum.com/wp-content/uploads/Amazing-Alfredo-Sauce-1365x2048.jpg" alt="Recipe 3">
+          <button class="tag">Recipes</button>
+          <h3>Homemade Alfredo Sauce</h3>
+      </div>
+      <div class="recipe2-card">
+          <img src="https://pinchofyum.com/wp-content/uploads/Gochujang-Tofu-in-Bowl.jpg" alt="Recipe 4">
+          <button class="tag">Recipes</button>
+          <h3>Sticky Gochujang Tofu with Herbs and Peanuts</h3>
+      </div>
+  </div>
+  <div class="signup-section">
+      <div class="cookbook">
+          <div class="image-wrapper">
+              <img src="https://pinchofyum.com/wp-content/assets/images/cta/poy-ecookbook-2021.png" alt="Cookbook">
+          </div>
+          </div>
+      <div class="signup-info">
+          <h2>Get It Now</h2>
+          <h3>Pinch of Yum Cookbook</h3>
+          <p>The eBook includes our most popular 25 recipes in a beautiful, easy-to-download format. Enter your email and we'll send it right over!</p>
+          <form>
+              <input type="text" placeholder="First Name">
+              <input type="email" placeholder="Email">
+              <button type="submit">Go</button>
+          </form>
+      </div>
+  </div>
+ </body> </html>
